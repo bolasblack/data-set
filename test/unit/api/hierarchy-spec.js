@@ -9,6 +9,8 @@ describe('View API: hierarchy', () => {
     type: 'hierarchy'
   });
 
+  console.log('dv.root', Object.keys(dv.root.constructor.prototype));
+
   it('getAllNodes()', () => {
     expect(dv.getAllNodes().length).to.equal(252);
   });
