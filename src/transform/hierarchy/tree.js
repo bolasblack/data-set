@@ -52,7 +52,7 @@ function transform(dataView, options) {
 
   const x = as[0];
   const y = as[1];
-  root.each(node => {
+  root.eachNode(node => {
     node[x] = node.x;
     node[y] = node.y;
   });

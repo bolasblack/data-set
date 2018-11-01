@@ -55,7 +55,7 @@ function transform(dataView, options) {
    */
   const x = as[0];
   const y = as[1];
-  root.each(node => {
+  root.eachNode(node => {
     node[x] = [ node.x0, node.x1, node.x1, node.x0 ];
     node[y] = [ node.y1, node.y1, node.y0, node.y0 ];
     [ 'x0', 'x1', 'y0', 'y1' ].forEach(prop => {

@@ -5,7 +5,7 @@ const View = require('../view');
 assign(View.prototype, {
   getAllNodes() {
     const nodes = [];
-    this.root.each(node => {
+    this.root.eachNode(node => {
       nodes.push(node);
     });
     return nodes;
